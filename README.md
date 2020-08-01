@@ -1,7 +1,8 @@
 
 # rk-nuxt-atomic-design-starter
 
-> Atomic Design starter kit for front-end development with Nuxt.js. &nbsp; ![Built with nuxt js](https://user-images.githubusercontent.com/22690563/72204887-c64a1b80-348d-11ea-9dee-f0760fe70fad.png) Nuxt.js.
+> Atomic Design starter kit for front-end development with Nuxt.js. &nbsp;
+![Built with nuxt js](https://user-images.githubusercontent.com/22690563/72204887-c64a1b80-348d-11ea-9dee-f0760fe70fad.png) Nuxt.js.
 
 &nbsp;
 ##### POWERED BY
