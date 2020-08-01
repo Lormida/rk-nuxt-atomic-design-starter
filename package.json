@@ -2,6 +2,23 @@
   "name": "rk-nuxt-atomic-design-starter",
   "version": "1.0.0",
   "private": false,
+  "keywords": [
+    "nuxt atomic design",
+    "nuxt.js atomic design",
+    "nuxt starter template",
+    "nuxt atomic design boilerplate"
+  ],
+  "author": "selimdoyranli",
+  "contributors": [
+    "Selim Doyranlı <selim@radkod.com> (https://selimdoyranli.com)"
+  ],
+  "bugs": "selim@radkod.com",
+  "homepage": "https://github.com/RadKod/rk-nuxt-atomic-design-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RadKod/rk-nuxt-atomic-design-starter"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development && nuxt --port 3000",
     "prod": "cross-env NODE_ENV=production && nuxt start --port 3000",
