@@ -1,7 +1,8 @@
 
 # rk-nuxt-atomic-design-starter
 
-> Atomic Design starter kit for front-end development with Nuxt.js. &nbsp;
+> Atomic Design starter kit for front-end development with Nuxt.js.
+<br>
 &nbsp;
 ![Built with nuxt js](https://user-images.githubusercontent.com/22690563/72204887-c64a1b80-348d-11ea-9dee-f0760fe70fad.png) Nuxt.js.
 
@@ -16,6 +17,10 @@
   * ##### Nuxt auto import components (https://github.com/nuxt/components)
   * ##### Nuxt Style Resources Module
   * ##### Sample Vuex Store (App Preloader)
+  * ##### Eslint
+  * ##### Prettier
+  * ##### Stylelint
+  * ##### Stylelint config rational order plugin
 
 
 &nbsp;
