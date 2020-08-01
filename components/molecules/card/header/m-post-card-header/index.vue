@@ -1,7 +1,7 @@
 <template lang="pug">
 .m-rk-post-card-header
   a-card-title(:title="post.title")
-  x-material-icon(name="more-vert" size="22")
+  x-material-icon(name="more-vert" :size="22")
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template lang="pug">
 .a-rk-app-logo
   span rk-nuxt-atomic-design-starter
-    x-material-icon(name="star-circle" size="32")
+    x-material-icon(name="star-circle" :size="32")
 </template>
 
 <script>
