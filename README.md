@@ -1,13 +1,13 @@
 
 # rk-nuxt-atomic-design-starter
 
-> Atomic Design nuxt.js (vue) starter kit for universal app. ![Built with nuxt js](https://user-images.githubusercontent.com/22690563/72204887-c64a1b80-348d-11ea-9dee-f0760fe70fad.png) Nuxt.js.
+> Atomic Design starter kit for front-end development with Nuxt.js. &nbsp; ![Built with nuxt js](https://user-images.githubusercontent.com/22690563/72204887-c64a1b80-348d-11ea-9dee-f0760fe70fad.png) Nuxt.js.
 
 &nbsp;
 ##### POWERED BY
 [![N|Solid](https://i.ibb.co/q5G6N0n/radkod-mail-imza.png)](https://www.radkod.com)
 
-#### Atomic Design Front-End Development Starter Kit Used By RadKod Freelance Team.
+#### rk-nuxt-atomic-design-starter Used By RadKod Freelance Team.
   
   * ##### Pug
   * ##### Sass (scss)
