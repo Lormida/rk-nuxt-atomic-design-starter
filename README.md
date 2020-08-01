@@ -15,6 +15,8 @@
   * ##### Nuxt Style Resources Module
   * ##### Sample Vuex Store (App Preloader)
 
+
+&nbsp;
 ## Installation
 
 Git clone.
