@@ -11,6 +11,7 @@
   
   * ##### Pug
   * ##### Sass (scss)
+  * ##### Nuxt auto import components (https://github.com/nuxt/components)
   * ##### Nuxt Style Resources Module
   * ##### Sample Vuex Store (App Preloader)
 
