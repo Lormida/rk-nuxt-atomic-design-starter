@@ -53,4 +53,4 @@ $ npm run generate
 
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/).
