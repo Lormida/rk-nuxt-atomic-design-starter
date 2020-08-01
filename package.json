@@ -1,6 +1,7 @@
 {
   "name": "rk-nuxt-atomic-design-starter",
   "version": "1.0.0",
+  "description": "Atomic Design starter kit for front-end development with Nuxt.js.",
   "private": false,
   "keywords": [
     "nuxt atomic design",
