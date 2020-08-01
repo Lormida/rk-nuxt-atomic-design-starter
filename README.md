@@ -31,7 +31,7 @@ $ git clone https://github.com/RadKod/rk-nuxt-atomic-design-starter.git
   
 
 ``` bash
-$ cd # rk-nuxt-atomic-design-starter
+$ cd rk-nuxt-atomic-design-starter
 
 # install dependencies
 $ npm install
