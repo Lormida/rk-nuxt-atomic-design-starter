@@ -36,15 +36,15 @@ export default {
   styleResources: {
     scss: [
       // Plugins
-      '~/assets/scss/plugins/_browserhack.scss', // Doc: https://github.com/selimdoyranli/browser-hack-sass-mixins
-      '~/assets/scss/plugins/_breakpoint.scss',
-      '~/assets/scss/plugins/_mq.scss', // Doc: https://github.com/sass-mq/sass-mq
+      '~/assets/style/scss/plugins/_browserhack.scss', // Doc: https://github.com/selimdoyranli/browser-hack-sass-mixins
+      '~/assets/style/scss/plugins/_breakpoint.scss',
+      '~/assets/style/scss/plugins/_mq.scss', // Doc: https://github.com/sass-mq/sass-mq
       // Functions
-      '~/assets/scss/functions/_center.scss',
-      '~/assets/scss/functions/_triangle.scss',
+      '~/assets/style/scss/functions/_center.scss',
+      '~/assets/style/scss/functions/_triangle.scss',
       // Mixins
-      '~/assets/scss/mixins/_font.scss',
-      '~/assets/scss/mixins/_gradient.scss'
+      '~/assets/style/scss/mixins/_font.scss',
+      '~/assets/style/scss/mixins/_gradient.scss'
     ]
   },
   /*
@@ -52,7 +52,7 @@ export default {
    */
   css: [
     // APP (Import & Shared managements for scss styles)
-    '~/assets/scss/app.scss'
+    '~/assets/style/scss/app.scss'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -67,7 +67,25 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/style-resources'],
+  buildModules: [
+    '@nuxtjs/style-resources',
+    [
+      '@nuxtjs/eslint-module',
+      {
+        // eslint module options
+      }
+    ],
+    [
+      '@nuxtjs/stylelint-module',
+      {
+        // stylelint module options
+        files: [
+          'assets/style/**/*.{css,sass,scss,less,stylus}',
+          '{components,layouts,pages}/**/*.vue'
+        ]
+      }
+    ]
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -77,21 +95,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
-    extractCSS: process.env.NODE_ENV === 'production',
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
+    extractCSS: process.env.NODE_ENV === 'production'
   },
 
   /*

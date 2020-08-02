@@ -26,8 +26,12 @@
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "stylelint:style": "stylelint 'assets/style/**/*.{css,sass,scss,less,stylus}'",
+    "stylelint:style:fix": "stylelint 'assets/style/**/*.{css,sass,scss,less,stylus}' --fix",
+    "stylelint:vue": "stylelint '{components,layouts,pages}/**/*.vue'",
+    "stylelint:vue:fix": "stylelint '{components,layouts,pages}/**/*.vue' --fix"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
@@ -36,7 +40,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.5.4",
+    "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/stylelint-module": "^4.0.0",
     "babel-eslint": "10.0.3",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
