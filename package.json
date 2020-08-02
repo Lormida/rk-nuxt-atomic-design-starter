@@ -28,10 +28,10 @@
     "generate": "nuxt generate",
     "eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "stylelint:style": "stylelint 'assets/style/**/*.{css,sass,scss,less,stylus}'",
-    "stylelint:style:fix": "stylelint 'assets/style/**/*.{css,sass,scss,less,stylus}' --fix",
-    "stylelint:vue": "stylelint '{components,layouts,pages}/**/*.vue'",
-    "stylelint:vue:fix": "stylelint '{components,layouts,pages}/**/*.vue' --fix"
+    "stylelint:style": "stylelint ./assets/style/**/*.{css,sass,scss,less,stylus}",
+    "stylelint:style:fix": "stylelint ./assets/style/**/*.{css,sass,scss,less,stylus} --fix",
+    "stylelint:vue": "stylelint ./{components,layouts,pages}/**/*.vue",
+    "stylelint:vue:fix": "stylelint ./{components,layouts,pages}/**/*.vue --fix"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
