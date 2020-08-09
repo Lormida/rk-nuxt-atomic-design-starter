@@ -15,6 +15,10 @@
   
   * ##### Pug
   * ##### Sass (scss)
+    * ##### Sass-mq
+    * ##### Breakpoints for sass-mq and global
+    * ##### Browserhack
+    * ##### Bootstrap 4 like responsive utils (display, spacing, flex)
   * ##### Nuxt auto import components (https://github.com/nuxt/components)
   * ##### Nuxt Style Resources Module
   * ##### Sample Vuex Store (App Preloader)
@@ -66,10 +70,10 @@ $ npm run eslint
 # run eslint fix for js & vue files
 $ npm run eslint:fix
 
-# run stylelint for styles directory
+# run stylelint for style directory
 $ npm run stylelint:style
 
-# run stylelint fix for styles directory
+# run stylelint fix for style directory
 $ npm run stylelint:style:fix
 
 # run stylelint for vue files
