@@ -57,4 +57,27 @@ $ npm run generate
 
 ```
 
+## Linter
+
+``` bash
+# run eslint for js & vue files
+$ npm run eslint
+
+# run eslint fix for js & vue files
+$ npm run eslint:fix
+
+# run stylelint for styles directory
+$ npm run stylelint:style
+
+# run stylelint fix for styles directory
+$ npm run stylelint:style:fix
+
+# run stylelint for vue files
+$ npm run stylelint:vue
+
+# run stylelint fix for vue files
+$ npm run stylelint:vue:fix
+
+```
+
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) and [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/).
