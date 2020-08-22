@@ -26,7 +26,7 @@
   * ##### Prettier
   * ##### Stylelint
   * ##### Stylelint config rational order plugin
-  * ##### Husky & Lint-Staged (linter runs before commits.)
+  * ##### Husky & Lint-Staged (linter runs pre-commits.)
 
 
 &nbsp;
