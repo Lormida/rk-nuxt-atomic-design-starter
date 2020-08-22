@@ -4,11 +4,13 @@ export default {
    ** See https://nuxtjs.org/api/configuration-mode
    */
   mode: 'universal',
+
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'server',
+
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -29,6 +31,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
   /*
    ** Global Styles (Do not import actual styles)
    ** https://www.npmjs.com/package/@nuxtjs/style-resources
@@ -47,23 +50,27 @@ export default {
       '~/assets/style/scss/mixins/_gradient.scss'
     ]
   },
+
   /*
    ** Global Styles (Actual styles)
    */
   css: [
-    // APP (Import & Shared managements for scss styles)
+    // Actual styles entry point (as import management)
     '~/assets/style/scss/app.scss'
   ],
+
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [],
+
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
+
   /*
    ** Nuxt.js dev-modules
    */
@@ -79,17 +86,16 @@ export default {
       '@nuxtjs/stylelint-module',
       {
         // stylelint module options
-        files: [
-          'assets/style/**/*.{css,sass,scss,less,stylus}',
-          '{components,layouts,pages}/**/*.vue'
-        ]
+        files: ['{assets/style,components,layouts,pages}/**/*.{css,sass,scss,less,stylus,vue}']
       }
     ]
   ],
+
   /*
    ** Nuxt.js modules
    */
   modules: [],
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
