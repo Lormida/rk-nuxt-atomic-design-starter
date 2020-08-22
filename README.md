@@ -26,6 +26,7 @@
   * ##### Prettier
   * ##### Stylelint
   * ##### Stylelint config rational order plugin
+  * ##### Husky & Lint-Staged (linter runs before commits.)
 
 
 &nbsp;
@@ -65,22 +66,16 @@ $ npm run generate
 
 ``` bash
 # run eslint for js & vue files
-$ npm run eslint
+$ npm run lint:eslint
 
 # run eslint fix for js & vue files
-$ npm run eslint:fix
+$ npm run lint:eslint:fix
 
-# run stylelint for style directory
-$ npm run stylelint:style
+# run stylelint for vue & style files
+$ npm run lint:stylelint
 
-# run stylelint fix for style directory
-$ npm run stylelint:style:fix
-
-# run stylelint for vue files
-$ npm run stylelint:vue
-
-# run stylelint fix for vue files
-$ npm run stylelint:vue:fix
+# run stylelint fix for vue & style files
+$ npm run lint:stylelint:fix
 
 ```
 
