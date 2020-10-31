@@ -52,6 +52,7 @@ export default {
 <style lang="scss" scoped>
 .page {
   position: relative;
+
   .t-rk-feed-post-list {
     width: 100%;
     max-width: 600px;

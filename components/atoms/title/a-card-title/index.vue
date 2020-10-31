@@ -1,5 +1,5 @@
 <template lang="pug">
-span.a-rk-card-title(v-if="title") {{title}}
+span.a-rk-card-title(v-if="title") {{ title }}
 </template>
 
 <script>

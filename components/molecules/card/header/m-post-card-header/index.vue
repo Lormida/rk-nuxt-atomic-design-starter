@@ -21,9 +21,11 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 12px 14px;
+
   .a-rk-card-title {
     font-size: 22px;
   }
+
   .x-material-icon {
     color: var(--color-icon-01);
   }

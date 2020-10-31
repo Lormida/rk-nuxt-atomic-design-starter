@@ -14,6 +14,7 @@ export default {}
   align-items: center;
   color: #012353;
   font-size: 2em;
+
   i {
     margin-left: 14px;
   }

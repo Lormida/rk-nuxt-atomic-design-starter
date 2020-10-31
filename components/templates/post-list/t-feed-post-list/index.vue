@@ -18,6 +18,7 @@ export default {
 <style lang="scss">
 .t-rk-feed-post-list {
   position: relative;
+
   .o-rk-post-card {
     margin-bottom: 40px;
   }

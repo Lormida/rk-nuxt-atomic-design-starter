@@ -1,5 +1,5 @@
 <template lang="pug">
-i.x-material-icon(:class="iconClass" :style="{'font-size': `${size}px`}")
+i.x-material-icon(:class="iconClass" :style="{ 'font-size': `${size}px` }")
 </template>
 
 <script>

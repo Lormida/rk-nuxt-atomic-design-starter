@@ -2,87 +2,65 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
+    jest: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    sourceType: 'module',
+    ecmaVersion: 2020
   },
-  extends: [
-    'eslint:recommended',
-    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    'plugin:vue/recommended',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
-  ],
-  // required to lint *.vue files
-  plugins: ['vue', 'nuxt'],
-  // add your custom rules here
+  extends: ['plugin:vue/strongly-recommended', 'eslint-config-prettier', 'prettier', 'prettier/vue'],
+  plugins: ['prettier'],
   rules: {
-    'vue/component-name-in-template-casing': 'off',
-    'vue/name-property-casing': 'off',
-    camelcase: 'off',
-    semi: [2, 'never'],
-    'vue/max-attributes-per-line': 'off',
-    'prettier/prettier': ['error', { semi: false }],
+    'prettier/prettier': ['error'],
+    'max-len': [
+      'error',
+      {
+        code: 150,
+        ignoreComments: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true
+      }
+    ],
+    'no-multiple-empty-lines': [2, { max: 2 }],
+    semi: ['error', 'never'],
+    'arrow-parens': ['error', 'as-needed'],
+    'vue/component-definition-name-casing': ['error', 'kebab-case'],
+    'no-extend-native': 'off',
+    'space-before-function-paren': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-param-reassign': [
       'error',
       {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'state', // for vuex state
-          'acc' // for reduce accumulators
-        ]
+        props: false
       }
     ],
-    'vue/order-in-components': [
+    'vue/html-self-closing': [
       'error',
       {
-        order: [
-          'el',
-          'name',
-          'parent',
-          'functional',
-          ['delimiters', 'comments'],
-          ['components', 'directives', 'filters'],
-          'extends',
-          'mixins',
-          'inheritAttrs',
-          'model',
-          ['props', 'propsData'],
-          'fetch',
-          'asyncData',
-          'data',
-          'computed',
-          'watch',
-          'LIFECYCLE_HOOKS',
-          'methods',
-          'head',
-          ['template', 'render'],
-          'renderError'
-        ]
+        html: {
+          void: 'any',
+          normal: 'always',
+          component: 'always'
+        },
+        svg: 'always',
+        math: 'always'
       }
     ],
-    'vue/attributes-order': [
+    'vue/order-in-components': ['error'],
+    'padding-line-between-statements': [
       'error',
-      {
-        order: [
-          'DEFINITION',
-          'LIST_RENDERING',
-          'CONDITIONALS',
-          'RENDER_MODIFIERS',
-          'GLOBAL',
-          'UNIQUE',
-          'TWO_WAY_BINDING',
-          'OTHER_DIRECTIVES',
-          'OTHER_ATTR',
-          'EVENTS',
-          'CONTENT'
-        ]
-      }
-    ],
-    'nuxt/no-this-in-fetch-data': 'off'
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: '*', next: 'if' },
+      { blankLine: 'always', prev: '*', next: 'switch' },
+      { blankLine: 'always', prev: '*', next: 'for' },
+      { blankLine: 'always', prev: '*', next: 'function' },
+      { blankLine: 'never', prev: 'import', next: 'import' },
+      { blankLine: 'always', prev: 'import', next: 'export' },
+      { blankLine: 'always', prev: 'expression', next: 'export' },
+      { blankLine: 'always', prev: 'import', next: 'expression' }
+    ]
   }
 }

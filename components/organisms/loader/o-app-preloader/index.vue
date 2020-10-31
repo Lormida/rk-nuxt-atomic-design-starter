@@ -1,5 +1,5 @@
 <template lang="pug">
-.o-rk-app-preloader(ref="appPreloader" v-if="preloader.isLoading")
+.o-rk-app-preloader(v-if="preloader.isLoading" ref="appPreloader")
   a-preloader-spinner
 </template>
 

@@ -1,3 +1,4 @@
 *.min.*
 assets/**/*/vendor
 static/
+public/

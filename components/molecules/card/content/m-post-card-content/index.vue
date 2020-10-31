@@ -18,6 +18,7 @@ export default {
 <style lang="scss" scoped>
 .m-rk-post-card-content {
   position: relative;
+
   &__description {
     display: inline-block;
     margin: 16px 0;
