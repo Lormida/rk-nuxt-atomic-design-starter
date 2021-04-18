@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -63,7 +63,7 @@ export default {
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
-  components: true,
+  components: [{ path: '~/components', pathPrefix: false }],
 
   /*
    ** Nuxt.js dev-modules
@@ -105,6 +105,6 @@ export default {
   server: {
     host: '0.0.0.0', // default: localhost,
     timing: false,
-    port: 80
+    port: 8080
   }
 }
