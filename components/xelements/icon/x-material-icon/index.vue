@@ -3,7 +3,9 @@ i.x-material-icon(:class="iconClass" :style="{ 'font-size': `${size}px` }")
 </template>
 
 <script>
-export default {
+import { defineComponent, computed } from '@nuxtjs/composition-api'
+
+export default defineComponent({
   props: {
     name: {
       type: String,
@@ -15,10 +17,10 @@ export default {
       default: 16
     }
   },
-  computed: {
-    iconClass() {
-      return `zmdi zmdi-${this.name}`
-    }
+  setup(props) {
+    const iconClass = computed(() => `zmdi zmdi-${props.name}`)
+
+    return { iconClass }
   }
-}
+})
 </script>

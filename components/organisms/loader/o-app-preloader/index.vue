@@ -4,20 +4,24 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { defineComponent, computed, useStore, onMounted, nextTick } from '@nuxtjs/composition-api'
 
-export default {
-  computed: {
-    ...mapState(['preloader'])
-  },
-  mounted() {
-    this.$nextTick(() => {
-      if (!this.preloader.isAttached) {
-        this.$store.commit('preloader/HIDE_PRELOADER')
-      }
+export default defineComponent({
+  setup() {
+    const store = useStore()
+    const preloader = computed(() => store.state.preloader)
+
+    onMounted(() => {
+      nextTick(() => {
+        if (!preloader.isAttached) {
+          store.commit('preloader/HIDE_PRELOADER')
+        }
+      })
     })
+
+    return { preloader }
   }
-}
+})
 </script>
 
 <style lang="scss" scoped>

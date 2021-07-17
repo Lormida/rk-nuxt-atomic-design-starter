@@ -69,13 +69,18 @@ module.exports = {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    // https://composition-api.nuxtjs.org
+    '@nuxtjs/composition-api/module',
+    // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
+    // https://github.com/nuxt-community/eslint-module
     [
       '@nuxtjs/eslint-module',
       {
         // eslint module options
       }
     ],
+    // https://github.com/nuxt-community/stylelint-module
     [
       '@nuxtjs/stylelint-module',
       {
