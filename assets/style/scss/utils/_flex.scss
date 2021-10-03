@@ -120,7 +120,7 @@
   }
 }
 
-@include mq($until: mobile) {
+@include mq($from: mobile) {
   @include flex(sm);
 }
 

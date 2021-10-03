@@ -114,7 +114,7 @@
   }
 }
 
-@include mq($until: mobile) {
+@include mq($from: mobile) {
   @include spacing(sm);
 }
 
