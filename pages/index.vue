@@ -55,7 +55,7 @@ export default defineComponent({
 .page {
   position: relative;
 
-  .t-rk-feed-post-list {
+  .t-feed-post-list {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
